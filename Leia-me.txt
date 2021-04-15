@@ -3,6 +3,7 @@ https://pt.wowhead.com/spell=340026
 
 App pra transcrição em PT-BR:
 https://www.microsoft.com/pt-br/p/tts-text-to-speech-audio-mp3/9n2gms5ntwz3
+Velocidade 1.35
 
 Conversor OGG
 https://www.movavi.com/free-audio-converter.html
