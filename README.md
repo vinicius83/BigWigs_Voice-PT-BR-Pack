@@ -12,5 +12,3 @@ Por enquanto basta substituir os arquivos de som "ogg" na pasta:
 * O Outro Lado
 
 ##### Raids Concluídas:
-
------------------------------
