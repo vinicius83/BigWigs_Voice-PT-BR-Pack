@@ -7,3 +7,25 @@ Velocidade 1.35
 
 Conversor OGG
 https://www.movavi.com/free-audio-converter.html
+
+---------------
+Concluído:
+
+
+---------------
+Trabalhando em:
+spells-sha-dung.txt
+
+
+-----------
+Não iniciado:
+spells-sha-raid.txt
+
+spells-bfa-dung.txt
+spells-bfa-raid.txt
+
+spells-leg-dung.txt
+spells-leg-raid.txt
+
+spells-wod-raid.txt
+
