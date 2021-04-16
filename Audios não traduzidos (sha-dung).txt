@@ -1,50 +1,5 @@
 ; Type: Shadowlands Dungeon
 
-
-; -------------------------------------
-;    Zone: Halls of Atonement
-; -------------------------------------
-
-; Boss: Trash
-326450	Feras Fiéis
-325799	Tiro Rápido
-344993	Revés Serrilhado
-346866	Sopro Pétreo
-325523	Estocada Mortal
-325876	Maldição da Obliteração
-325700	Coletar Pecados
-325701	Sifão de Vida
-326409	Surra
-326607	Virar Pedra
-326997	Patada Poderosa
-
-; Boss: Halkias, the Sin-Stained Goliath
-323001	Cacos de Vidro
-322936	Pancada Esfacelante
-322943	Arremessar Destroços
-322711	Luz Sacrílega Refratada
-322977	Visões da Luz Sacrílega
-
-; Boss: Echelon
-319733	Chamado de Pedra
-328206	Maldição da Pedra
-319941	Salto Estilhaçador de Pedra
-326389	Torrente de Sangue
-
-; Boss: High Adjudicator Aleez
-323538	Seta de Poder
-323552	Salva de Poder
-323650	Fixação Assombrosa
-329340	Fonte de Ânima
-
-; Boss: Lord Chamberlain
-329104	Porta das Sombras
-328791	Ritual da Desgraça
-323150	Arremesso Telecinético
-323236	Sofrimento Desenfreado
-323437	Estigma do Orgulho
-
-
 ; -------------------------------------
 ;    Zone: Mists of Tirna Scithe
 ; -------------------------------------
