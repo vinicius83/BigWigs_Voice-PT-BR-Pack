@@ -6,43 +6,43 @@
 ; -------------------------------------
 
 ; Boss: Trash
-326450	Loyal Beasts
-325799	Rapid Fire
-344993	Jagged Swipe
-346866	Stone Breath
-325523	Deadly Thrust
-325876	Curse of Obliteration
-325700	Collect Sins
-325701	Siphon Life
-326409	Thrash
-326607	Turn to Stone
-326997	Powerful Swipe
+326450	Feras Fiéis
+325799	Tiro Rápido
+344993	Revés Serrilhado
+346866	Sopro Pétreo
+325523	Estocada Mortal
+325876	Maldição da Obliteração
+325700	Coletar Pecados
+325701	Sifão de Vida
+326409	Surra
+326607	Virar Pedra
+326997	Patada Poderosa
 
 ; Boss: Halkias, the Sin-Stained Goliath
-323001	Glass Shards
-322936	Crumbling Slam
-322943	Heave Debris
-322711	Refracted Sinlight
-322977	Sinlight Visions
+323001	Cacos de Vidro
+322936	Pancada Esfacelante
+322943	Arremessar Destroços
+322711	Luz Sacrílega Refratada
+322977	Visões da Luz Sacrílega
 
 ; Boss: Echelon
-319733	Stone Call
-328206	Curse of Stone
-319941	Stone Shattering Leap
-326389	Blood Torrent
+319733	Chamado de Pedra
+328206	Maldição da Pedra
+319941	Salto Estilhaçador de Pedra
+326389	Torrente de Sangue
 
 ; Boss: High Adjudicator Aleez
-323538	Bolt of Power
-323552	Volley of Power
-323650	Haunting Fixation
-329340	Anima Fountain
+323538	Seta de Poder
+323552	Salva de Poder
+323650	Fixação Assombrosa
+329340	Fonte de Ânima
 
 ; Boss: Lord Chamberlain
-329104	Door of Shadows
-328791	Ritual of Woe
-323150	Telekinetic Toss
-323236	Unleashed Suffering
-323437	Stigma of Pride
+329104	Porta das Sombras
+328791	Ritual da Desgraça
+323150	Arremesso Telecinético
+323236	Sofrimento Desenfreado
+323437	Estigma do Orgulho
 
 
 ; -------------------------------------
