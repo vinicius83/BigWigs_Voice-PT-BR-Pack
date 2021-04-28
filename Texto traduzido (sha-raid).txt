@@ -1,0 +1,196 @@
+; Type: Shadowlands Raid
+
+; -------------------------------------
+;    Zone: Castle Nathria
+; -------------------------------------
+
+; Boss: Trash
+343322	Maldição de Moldovaak
+343320	Maldição de Caraman
+343325	Maldição de Sindrel
+343316	Maldição da Hargitas
+343155	Litopele
+343302	Asas de Granito
+329989	Enfurecer
+341441	Esmagamento Terrestre
+341352	Rede Magistral do Emboscador
+341735	Restaurar Pedra
+340630	Infecto
+329298	Miasma Glutônico
+339553	Ânima Duradoura
+339557	Ânima Engarrafada
+339528	Desejos Distorcidos
+339525	Concentrar Ânima
+
+; Boss: Shriekwing
+330711	Guincho Estrepitoso
+340324	Icor Sanguíneo
+342074y Ecolocalização em você
+342863	Guinchado Ecoante
+345397	Onda de Sangue
+343005	Patada às Cegas
+328857	Mordida Sanguinante
+328897	Sangue drenado
+345936	Guincho Estrepitoso
+328921	Mortalha de Sangue
+329362	Sonar Ecoante
+341684	Lanterna Sangrenta
+341489	Luz Sangrenta
+
+; Boss: Huntsman Altimor
+335114	Caçador de Pecados
+334404	Tiro Disperso
+334971	Garras Serrilhadas
+334945	Estocada Cruel
+334797	Rasgar Alma
+334884	Devorar Alma
+334757	Vultos de Bargast
+334860	Pedra Esmagadora
+334852y Uivo Petrificante em você
+334893	Estilhaços de Pedra
+
+; Boss: Sun King's Salvation
+326455	Golpe de Fogo
+326456	Resquícios Ardentes
+325877	Impacto Incandescente
+329518	Surto Fulgurante
+328579	Restos Fumegantes
+328479y Olho no Alvo em você
+-21954	Rockbound Vanquisher
+325440	Ataque Arrebatador
+325442	Vencido
+325506	Golpe de Concussão
+-21993	Bleakwing Assassin
+326583y Ímpeto Carmesim em você
+333145	Retornar à Pedra
+-21952	Vile Occultist
+333002	Marca Vulgar
+-21953	Soul Infuser
+-22082	Pestering Fiend
+326078	Bênção do Imbuidor
+339251	Alma Drenada
+328889	Castigo Maior
+337859	Manto das Chamas
+343026	Manto das Chamas
+
+; Boss: Artificer Xy'mox
+328437y Rasgo Dimensional em você
+325236	Glifo de Destruição
+326271	Armadilha de Estase
+335013	Impacto de Fissura
+325399	Centelha de Hiperluz
+340758	Espíritos Fugazes
+327902y Fixação em você em você
+327414	Possessão
+340788	Sementes de Extinção
+329107	Extinção
+340860	Toque Definhante
+328789	Aniquilar
+
+; Boss: Hungering Destroyer
+329298y Miasma Glutônico em você
+334522	Consumir
+329725	Expungir
+334266y Ejeção Volátil em você
+329455	Desolado
+329774	Sobrepujar
+332295	Fome Crescente
+
+; Boss: Lady Inerva Darkvein
+331870	Concentrar Ânima
+341621	Expor Desejos
+325382	Desejos Distorcidos
+340452y Mudança de Opinião em você
+325936	Cognição Compartilhada
+325769	Ânima Engarrafada
+325713	Ânima Duradoura
+324983y Sofrimento Compartilhado em você
+332664y Ânima Concentrada em você
+331573	Culpa Desmedida
+331550	Condenar
+
+; Boss: The Council of Blood
+346690	Riposta do Duelista
+346698	Evocar Atendente Obediente
+330978	Serviçais Dragadores
+330965	Quadros do Castelão
+346790	Lâmina Pecaminosa
+346651	Drenar Essência
+337110	Salva de Setas Medonhas
+346657	Erupção Orgulhosa
+346945	Manifestar Dor
+346681	Espetos Anímicos
+327497	Estocada Evasiva
+331634y Recital Sombrio em você
+346800	Valsa de Sangue
+346303	Tumulto Violento
+330959	Dança Macabra
+330848	Passos Errados
+-22433	Afterimage of Baroness Frieda
+347350y Dança Contagiante em você
+
+; Boss: Sludgefist
+331209	Olhar Odioso
+331314	Impacto Destrutivo
+335293y Vínculo Acorrentado em você
+332318	Pisada Destrutiva
+341193	Chuva de Cascalho
+335361	Rochamoto
+332687	Rugido Colossal
+335470	Batida Encadeada
+341102	Pedregulho Fraturado
+340817	Mudança Sísmica
+341250	Raiva Repulsiva
+
+; Boss: Stone Legion Generals
+329636	Forma de Pedra Endurecida
+333387y Lâmina Maléfica em você
+333913	Laceração Perversa
+334765	Dilaceração Cardíaca
+334929	Golpe Serrilhado
+339690	Cristalizar
+342544	Meteoro Pulverizante
+343063	Aguilhão Pétreo
+342733	Banquete Voraz
+342985	Efígie da Borrasca Pétrea
+332406	Infusão de Ânima
+339885	Infecção de Ânima
+342722	Despejo Irapétrea
+332683	Impacto Estilhaçante
+329808	Forma de Pedra Endurecida
+342425	Punho Rochoso
+334009	Salto Reverberante
+334498	Revolta Sísmica
+342256	Convocar Forças das Sombras
+342655	Infusão de Ânima Volátil
+340037	Carapaça de Pedra Volátil
+342698	Infecção de Ânima Volátil
+
+; Boss: Sire Denathrius
+328936	Inevitável
+326699	Fardo do Pecado
+326707	Dor Purificadora
+326851	Preço em Sangue
+327039y Hora de Matar a Fome em você
+327796	Caçador Noturno
+327227	Comando Assolar
+327122	Assolar
+327992	Desolação
+328276	Marcha dos Penitentes
+329906	Chacina
+329951	Empalar
+-22131	Crimson Cabalist
+336162	Crescente
+335873	Rancor
+329181	Dor Lancinante
+333932	Mão da Destruição
+330042	Comando Massacre
+332585	Escarne
+332619	Dor Estilhaçante
+332794	Finesse Fatal
+336008	Ira Abrasadora
+332849	Reflexão: Assolar
+333980	Reflexão: Massacre
+344776	Uivo Vingativo
+338738	Através do Espelho
+333979	Reflexão Sinistra
