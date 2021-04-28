@@ -5,54 +5,54 @@
 ; -------------------------------------
 
 ; Boss: Trash
-324909	Furious Thrashing
-324923	Bramble Burst
-322938	Harvest Essence
-322569	Hand of Thros
-322557	Soul Split
-331718	Spear Flurry
-340304	Poisonous Secretions
-340305	Crushing Leap
-340300	Tongue Lashing
-331743	Bucking Rampage
-340189	Pool of Radiance
-340160	Radiant Breath
-340208	Shred Armor
-340289	Triple Bite
-340279	Poisonous Discharge
-324776	Bramblethorn Coat
-324987	Mistveil Bite
-325224	Anima Injection
-324914	Nourish the Forest
-325418y	Volatile Acid on you
-340544	Stimulate Regeneration
-326046	Stimulate Resistance
-321968	Bewildering Pollen
-322486	Overgrowth
+324909	Espancamento Furioso
+324923	Estouro de Espinheiro
+322938	Essência da Colheita
+322569	Mão de Thros
+322557	Divisão Espiritual
+331718	Rajada de Lanças
+340304	Secreções Venenosas
+340305	Salto Esmagador
+340300	Açoite com Língua
+331743	Alvoroço Triturante
+340189	Poço do Resplendor
+340160	Sopro Radiante
+340208	Despedaçar Armadura
+340289	Mordida Tripla
+340279	Descarga Venenosa
+324776	Cobertura de Arbusto Espinhoso
+324987	Mordida do Véu da Névoa
+325224	Injeção de Ânima
+324914	Nutrir a Floresta
+325418y Ácido Volátil
+340544	Estimular Regeneração
+326046	Estimular Resistência
+321968	Pólen Desnorteante
+322486	Brotação
 
 ; Boss: Ingra Maloch
-323057	Spirit Bolt
-328756	Repulsive Visage
-323149	Embrace Darkness
-323137	Bewildering Pollen
-323177	Tears of the Forest
-323059	Droman's Wrath
+323057	Seta Espiritual
+328756	Semblante Repulsivo
+323149	Entregue-se à Escuridão
+323137	Pólen Desnorteante
+323177	Lágrimas da Floresta
+323059	Ira de Droman
 
 ; Boss: Mistcaller
-336499	Guessing Game
-321834	Dodge Ball
-321828	Patty Cake
-326180	Freeze Tag
+336499	Jogo de Adivinhação
+321834	Queimada
+321828	Adoleta
+326180	Marca de Congelamento
 
 ; Boss: Tred'ova
-322450	Consumption
-322550	Accelerated Incubation
-322614	Mind Link
-322563	Marked Prey
-322651	Acid Expulsion
-337235	Parasitic Pacification
-337249	Parasitic Incapacitation
-337255	Parasitic Domination
+322450	Consumição
+322550	Incubação Acelerada
+322614	Elo Mental
+322563	Presa Marcada
+322651	Expulsão Ácida
+337235	Pacificação Parasitária
+337249	Incapacitação Parasitária
+337255	Dominação Parasitária
 
 
 ; -------------------------------------
@@ -60,49 +60,49 @@
 ; -------------------------------------
 
 ; Boss: Trash
-323572	Rolling Plague
-327515	Fen Stinger
-329239	Creepy Crawlers
-330403	Wing Buffet
-327882	Blightbeak
-327233	Belch Plague
-327584	Beckon Slime
-320512	Corroded Claws
-318949	Festering Belch
-320517	Jagged Spines
-328180	Gripping Infection
-321935	Withering Filth
-336451	Bulwark of Maldraxxus
-328475	Enveloping Webbing
-330786	Oozing Carcass
-330816	Ghost Step
-328016	Wonder Grow
-327995	Doom Shroom
-328177	Fungistorm
+323572	Peste Ondulante
+327515	Aguilhoador do Charco
+329239	Rastejantes Sinistros
+330403	Bofetada de Asa
+327882	Bico Praguejado
+327233	Arrotar Peste
+327584	Chamar Visgo
+320512	Garras Corroídas
+318949	Arroto Purulento
+320517	Espinhos Serrilhados
+328180	Infecção Dominante
+321935	Imundície Debilitante
+336451	Baluarte de Maldraxxus
+328475	Teia Envolvente
+330786	Carcaça Gosmenta
+330816	Passo Fantasmal
+328016	Crescimento Esplendoroso
+327995	Cogumelo da Ruína
+328177	Tempestade Fúngica
 
 ; Boss: Globgrog
-324490	Beckon Slime
-324527	Plaguestomp
-324667	Slime Wave
+324490	Chamar Visgo
+324527	Pisão Empesteado
+324667	Onda de Visgo
 
 ; Boss: Doctor Ickus
-322358	Burning Strain
-67382	Leap
-329217	Slime Lunge
-329110	Slime Injection
-332617	Pestilence Surge
-321406	Virulent Explosion
+322358	Tensão Ardente
+67382	LSalto
+329217	Arremetida Visguenta
+329110	Injeção de Visgo
+332617	Surto de Pestilência
+321406	Explosão Virulenta
 
 ; Boss: Domina Vendomblade
-332313	Brood Assassins
-325552	Cytotoxic Slash
-325245	Shadow Ambush
-336258	Solitary Prey
+332313	Assassinos da Ninhada
+325552	Talho Citotóxico
+325245	Emboscada Sombria
+336258	Presa Solitária
 
 ; Boss: Margrave Stradama
-322232	Infectious Rain
-322304	Malignant Growth
-322475	Plague Crash
+322232	Chuva Infecciosa
+322304	Crescimento Maligno
+322475	Colisão Pestilenta
 
 
 ; -------------------------------------
@@ -112,28 +112,28 @@
 ; Boss: Trash
 
 ; Boss: Kryxis the Voracious
-319650	Vicious Headbutt
-319654	Hungering Drain
-319713	Juggernaut Rush
-319685	Severing Smash
+319650	Cabeçada Cruel
+319654	Drenagem Faminta
+319713	Investida de Jaganata
+319685	Pancada Decepadora
 
 ; Boss: Executor Tarvold
-322554	Castigate
-322573	Coalesce Manifestation
-328494	Sintouched Anima
-323551	Residue
+322554	Castigar
+322573	Coalescer Manifestação
+328494	Ânima Pecaminosa
+323551	Resíduo
 
 ; Boss: Grand Proctor Beryllia
-325254	Iron Spikes
-325360	Rite of Supremacy
-328737	Fragment of Radiance
-326039	Endless Torment
+325254	Espetos de Ferro
+325360	Rito de Supremacia
+328737	Fragmento do Resplendor
+326039	Tormento Infinito
 
 ; Boss: General Kaal
-323845	Wicked Rush
-323821	Piercing Blur
-322903	Gloom Squall
-324086	Shining Radiance
+323845	Impulso Perverso
+323821	Borrão Perfurante
+322903	Borrasca Lúgubre
+324086	Resplendor Rutilante
 
 
 ; -------------------------------------
@@ -143,27 +143,27 @@
 ; Boss: Trash
 
 ; Boss: Kin-Tara
-320966	Overhead Slash
-327481	Dark Lance
-321009	Charged Spear
-324368	Attenuated Barrage
-331251	Deep Connection
+320966	Talho Descendente
+327481	Lança Sombria
+321009	Lança Carregada
+324368	Salva Atenuada
+331251	Conexão Profunda
 
 ; Boss: Ventunax
-324146	Dark Stride
-324205	Blinding Flash
-334485	Recharge
+324146	Passo Sombrio
+324205	Clarão Cegante
+334485	Recarga
 
 ; Boss: Oryphrion
-324046	Recharge Anima
-324427	Empyreal Ordnance
-334053	Purifying Blast
-324608	Charged Stomp
+324046	Recarregar Ânima
+324427	Armamento Empíreo
+334053	Impacto Purificante
+324608	Pisão Carregado
 
 ; Boss: Devos, Paragon of Doubt
-334625	Abyssal Detonation
-322818	Lost Confidence
-323943	Run Through
+334625	Detonação Abissal
+322818	Confiança Perdida
+323943	Transpassar
 
 
 ; -------------------------------------
@@ -171,53 +171,53 @@
 ; -------------------------------------
 
 ; Boss: Trash
-334748	Drain Fluids
-323190	Meat Shield
-323347	Clinging Darkness
-322756	Wrath of Zolramus
-328667	Frostbolt Volley
-324293	Rasping Scream
-335143	Bonemend
-335141	Dark Shroud
-327396	Grim Fate
-324394	Shatter
-324387	Frigid Spikes
-324372	Reaping Winds
-338353	Goresplatter
-338456	Mutilate
-338357	Tenderize
-327130	Repair Flesh
-323496	Throw Cleaver
-338606	Morbid Fixation
+334748	Drenar Fluidos
+323190	Escudo de Carne
+323347	Escuridão Aderente
+322756	Ira de Zolramus
+328667	Salva de Setas de Gelo
+324293	Grito Aterrador
+335143	Recomposição Óssea
+335141	Mortalha Negra
+327396	Destino Sinistro
+324394	Estilhaçar
+324387	Espinhos Frígidos
+324372	Ventos Ceifadores
+338353	Banho de Entranhas
+338456	Mutilar
+338357	Amaciar
+327130	Remendar Carne
+323496	Arremessar Cutelo
+338606	Fixação Mórbida
 
 ; Boss: Blightbone
-320596	Heaving Retch
-320630	Blood Gorge
-320637	Fetid Gas
-320655	Crunch
+320596	Vômito Esguichante
+320630	Devoramento Sanguinário
+320637	Gás Fétido
+320655	Quebra
 
 ; Boss: Amarth, The Harvester
-321226	Land of the Dead
-321247	Final Harvest
-333488	Necrotic Breath
-320012	Unholy Frenzy
-320171	Necrotic Bolt
+321226	Terra dos Mortos
+321247	Colheita Final
+333488	Sopro Necrótico
+320012	Frenesi Profano
+320171	Seta Necrótica
 
 ; Boss: Surgeon Stichflesh
-320358	Awaken Creation
-322681	Meat Hook
-320376	Mutilate
-334476	Embalming Ichor
-320200y	Stitchneedle on you
-334488	Sever Flesh
-320359	Escape
-343556	Morbid Fixation
+320358	Despertar Criação
+322681	Gancho de Carne
+320376	Mutilar
+334476	Linfa Embalsamadora
+320200y Agulha Suturítica
+334488	Arrancar Carne
+320359	Fuga
+343556	Fixação Mórbida
 
 ; Boss: Nalthor the Rimebinder
-320772	Comet Storm
-321368	Icebound Aegis
-320788	Frozen Binds
-321894	Dark Exile
+320772	Chuva de Cometas
+321368	Égide Congélida
+320788	Aprisionamento Gélido
+321894	Exílio Sombrio
 
 
 ; -------------------------------------
@@ -225,48 +225,48 @@
 ; -------------------------------------
 
 ; Boss: Trash
-330562	Demoralizing Shout
-341969	Withering Discharge
-330614	Vile Eruption
-330868	Necrotic Bolt Volley
-342675	Bone Spear
+330562	Brado Desmoralizador
+341969	Descarga Fulminante
+330614	Erupção Torpe
+330868	Salva de Setas Necróticas
+342675	Lança Óssea
 
 ; Boss: An Affront of Challengers
-320063	Slam
-320069	Mortal Strike
-324085	Enrage
-326892	Fixate
-320248	Genetic Alteration
-333231	Searing Death
-320293	One With Death
-320272	Spectral Transference
-333540	Opportunity Strikes
+320063	Batida
+320069	Golpe Mortal
+324085	Enfurecer
+326892	Fixar
+320248	Alteração Genética
+333231	Morte Calcinante
+320293	Comunhão com a Morte
+320272	Transferência Espectral
+333540	Golpes de Oportunidade
 
 ; Boss: Gorechop
-323515	Hateful Strike
-322795	Meat Hooks
-318406	Tenderizing Smash
+323515	Golpe Odioso
+322795	Ganchos de Carne
+318406	Pancada Amaciante
 
 ; Boss: Xav the Unfallen
-320644	Brutal Combo
-320102	Blood and Glory
-331618	Oppressive Banner
-320050	Might of Maldraxxus
-320729	Massive Cleave
-317231	Crushing Slam
-339415	Deafening Crash
+320644	Combo Brutal
+320102	Sangue e Glória
+331618	Estandarte Opressor
+320050	Poder de Maldraxxus
+320729	Cutilada Gigantesca
+317231	Batida Esmagadora
+339415	Ribombo Ensurdecedor
 
 ; Boss: Kul'tharok
-319521y	Draw Soul on you
-319637y	Reclaimed Soul on you
-319626	Phantasmal Parasite
-319669	Spectral Reach
+319521y Atrair Alma
+319637y Alma Recuperada
+319626	Parasita Fantasmagórico
+319669	Garra Espectral
 
 ; Boss: Mordretha, the Endless Empress
-324079	Reaping Scythe
-323608	Dark Devastation
-323683	Grasping Rift
-324449	Manifest Death
-339573	Echos of Carnage
-339706	Ghostly Charge
-339550	Echo of Battle
+324079	Foice Ceifadora
+323608	Devastação Sombria
+323683	Fenda Agarradora
+324449	Manifestar Morte
+339573	Ecos da Chacina
+339706	Investida Fantasmagórica
+339550	Eco de Batalha
