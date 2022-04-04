@@ -1,0 +1,298 @@
+
+INSERT INTO tb_avu_ctc (
+                 c_org_prd
+                ,c_rmo
+                ,c_pro
+                ,c_pro_avu
+                ,c_vrs_pro_avu
+                ,e_sit_ctc
+                ,u_prp
+                ,u_prp_dig
+                ,u_apo_pnc
+                ,u_apo_tms
+                ,c_idt_pes_cvd
+                ,c_idt_cvd_cia
+                ,u_cpf_cpj
+                ,d_val_ctc
+                ,d_ini_vig_apo
+                ,d_fim_vig_apo
+                ,d_ven_prc
+                ,c_moe_apo
+                ,c_cob_bsc
+                ,o_cms_cvd
+                ,o_dsc_cml
+                ,o_iof
+                ,o_dsp
+                ,o_luc
+                ,o_enc_exp
+                ,o_dsc_ebg_cnn
+                ,o_frq
+                ,v_is_fob
+                ,v_is_fte
+                ,v_is_dsp
+                ,v_is_luc
+                ,v_is_ips
+                ,v_is_cnn
+                ,v_is_tot
+                ,v_pmo_fob
+                ,v_pmo_fte
+                ,v_pmo_dsp
+                ,v_pmo_luc
+                ,v_pmo_ips
+                ,v_pmo_liq
+                ,v_pmo_min
+                ,v_cus
+                ,v_iof
+                ,v_pmo_tot
+                ,v_cms_cvd
+                ,c_ori_tch
+                ,c_ori_cpl
+                ,c_dst_tch
+                ,c_dst_cpl
+                ,e_trp_cit
+                ,c_nav_chg
+                ,t_vei_tpr_chg
+                ,c_grp_mdr
+                ,c_mdr_irb
+                ,e_mdr
+                ,t_cpl_mdr
+                ,c_ebg_irb
+                ,i_ebg_cnn
+                ,t_obs
+                ,f_grp_mdr
+                ,u_ser_doc
+                ,u_doc
+                ,n_usu_ems
+                ,d_usu_ems
+                ,n_usu_inc
+                ,d_usu_inc
+                ,n_usu_alt
+                ,d_usu_alt
+                ,n_usu_exc
+                ,d_usu_exc
+                ,n_idt_pes_ctc
+                ,v_is_fob_ori
+                ,v_is_fte_ori
+                ,v_is_dsp_ori
+                ,v_is_luc_ori
+                ,v_is_ips_ori
+                ,c_moe_fob_ori
+                ,c_moe_fte_ori
+                ,c_moe_dsp_ori
+                ,c_moe_luc_ori
+                ,c_moe_ips_ori
+                ,v_cbi_fob_ori
+                ,v_cbi_fte_ori
+                ,v_cbi_dsp_ori
+                ,v_cbi_luc_ori
+                ,v_cbi_ips_ori
+                ,v_cbi_moe
+                ,e_vei_prp
+                ,u_prp_seg
+                ,q_dia_ven_prc
+                ,c_fma_pgt
+                ,e_cbr
+                ,d_sda_vgm
+                ,v_pmo_cnn
+                ,u_ctr_seg
+                ,c_ems_seg
+                ,c_grp_seg
+                ,c_ctl_ctf
+                ,v_is_ips_ii_ori
+                ,v_is_ips_ii
+                ,o_ips_ii
+                ,c_moe_ii
+                ,v_cbi_ips_ii
+                ,v_is_ips_ipi_ori
+                ,v_is_ips_ipi
+                ,o_ips_ipi
+                ,c_moe_ipi
+                ,v_cbi_ips_ipi
+                ,v_is_ips_icm_ori
+                ,v_is_ips_icm
+                ,o_ips_icm
+                ,c_moe_icm
+                ,v_cbi_ips_icm
+                ,v_is_ips_pis_ori
+                ,v_is_ips_pis
+                ,o_ips_pis
+                ,c_moe_pis
+                ,v_cbi_ips_pis
+                ,v_is_ips_cof_ori
+                ,v_is_ips_cof
+                ,o_ips_cof
+                ,c_moe_cof
+                ,v_cbi_ips_cof
+                ,c_moe_ctf
+                ,v_cbi_moe_ctf
+                ,v_is_tot_ctf
+                ,v_pmo_tot_ctf
+                ,c_seq_ict
+                ,t_atv
+                ,i_pta_imp
+                ,i_dst_exp
+                ,i_cif_fch
+                ,v_pmo_cal
+                ,i_ret_bft
+                ,v_is_bft
+                ,v_pmo_bft
+                ,i_dst_evt
+                ,f_tax_bsc
+                ,f_tax_fnl
+                ,u_frm_pgt
+                ,d_vct_blt
+                ,I_CLI_PEP_NAC
+                ,I_CLI_PEP_EST
+                ,C_TIP_PEP
+                ,N_USU_ALT_PRM
+                ,u_ctc_clo
+              --  ,u_vrs_seg
+ ) VALUES (
+16, --c_org_prd
+21, --c_rmo
+21, --c_pro
+212179000, --c_pro_avu
+2020121401, --c_vrs_pro_avu
+ 0, --,e_sit_ctc
+ 0, --u_prp
+ 0, --u_prp_dig
+ 0, --u_apo_pnc
+ 0, --u_apo_tms
+ 99005736, --c_idt_pes_cvd
+ 99010532, --c_idt_cvd_cia
+ 23787565000166, --u_cpf_cpj
+'14/04/2022', --d_val_ctc
+'29/03/2022', --d_ini_vig_apo
+'29/04/2022', --d_fim_vig_apo
+'06/04/2022', --d_ven_prc
+790, --c_moe_apo
+21203, --c_cob_bsc
+25.00, --o_cms_cvd
+10, --o_dsc_cml
+7.38, --o_iof
+0.00, --o_dsp
+0.00, --o_luc
+0, --o_enc_exp
+0, --o_dsc_ebg_cnn
+10.00, --o_frq
+20000.00, --v_is_fob
+0.00, --v_is_fte
+0.00, --v_is_dsp
+0.00, --v_is_luc
+0, --v_is_ips
+0.00, --v_is_cnn
+20000.00, --v_is_tot
+56.70, --v_pmo_fob
+0.00, --v_pmo_fte
+0.00, --v_pmo_dsp
+0.00, --v_pmo_luc
+0.00, --v_pmo_ips
+750.00, --v_pmo_liq
+750, --v_pmo_min
+0, --v_cus
+55.35, --v_iof
+805.35, --v_pmo_tot
+187.5000, --v_cms_cvd
+10, --c_ori_tch
+1, --c_ori_cpl
+14, --c_dst_tch
+1, --c_dst_cpl
+'A', --e_trp_cit
+0, --c_nav_chg
+'TAM', --t_vei_tpr_chg
+7, --c_grp_mdr
+'0000000191', --c_mdr_irb
+'N', --e_mdr
+'NN', --t_cpl_mdr
+91, --c_ebg_irb
+'N',--i_ebg_cnn
+'XXXX', --t_obs
+0.3150, --f_grp_mdr
+1234, --u_ser_doc
+4321,--u_doc 
+'' , --n_usu_ems
+NULL, --d_usu_ems   SEM VARIAVEL
+'mapaseg', --N_USU_INC
+SYSDATE, --d_usu_inc
+' ' , --N_USU_ALT
+NULL, --d_usu_alt
+' ' , --N_USU_EXC
+NULL, --d_usu_exc
+'CNPJ RISCO BAIXO',  --N_IDT_PES_CTC
+20000.00, --V_IS_FOB_ORI
+0.00, --V_IS_FTE_ORI
+0.00, --V_IS_DSP_ORI
+0.00, --V_IS_LUC_ORI
+0.00, --V_IS_IPS_ORI
+0, --C_MOE_FOB_ORI
+0, --C_MOE_FTE_ORI
+0, --C_MOE_DSP_ORI
+0, --C_MOE_LUC_ORI
+0, --C_MOE_IPS_ORI
+0, --V_CBI_FOB_ORI
+0, --V_CBI_FTE_ORI
+0, --V_CBI_DSP_ORI
+0, --V_CBI_LUC_ORI
+0, --V_CBI_IPS_ORI
+1, --V_CBI_MOE
+0, --E_VEI_PRP
+0, --U_PRP_SEG
+0, --Q_DIA_VEN_PRC
+NULL , --C_FMA_PGT
+NULL , --E_CBR
+'30/03/2022 00:00:00', --D_SDA_VGM
+0.00, --V_PMO_CNN
+0, --U_CTR_SEG
+0, --C_EMS_SEG
+NULL , --C_GRP_SEG
+'' , --C_CTL_CTF
+0, --v_is_ips_ii_ori
+0, --V_IS_IPS_II
+0, --O_IPS_II 
+NULL,               --' '  --c_moe_ii
+NULL , --v_cbi_ips_ii
+0, --v_is_ips_ipi_ori
+0, --V_IS_IPS_ipi
+0, --O_IPS_ipi
+NULL , --c_moe_ipi 
+NULL , --v_cbi_ips_ipi
+0, --v_is_ips_icm_ori
+0, --v_is_ips_icm
+0, --o_ips_icm
+NULL , --c_moe_icm
+NULL , --v_cbi_ips_icm
+0, --v_is_ips_pis_ori
+0, --v_is_ips_pis
+0, --o_ips_pis
+NULL , --c_moe_pis
+NULL , --v_cbi_ips_pis
+0, --v_is_ips_cof_ori
+0, --v_is_ips_cof
+0, --o_ips_cof
+NULL , --c_moe_cof
+NULL , --v_cbi_ips_cof
+NULL , --C_MOE_CTF
+NULL ,  --V_CBI_MOE_CTF
+NULL , --V_IS_TOT_CTF
+0, --V_PMO_TOT_CTF
+NULL,  --c_seq_ict
+'4729-6/01', --t_atv
+'N', --i_pta_imp
+'N', --i_dst_exp
+NULL , --i_cif_fch
+750.00, --v_pmo_cal
+0, --i_ret_bft
+0, --v_is_bft
+NULL , --v_pmo_bft
+'N', --i_dst_evt
+0.3150, --F_TAX_BSC
+0.28350, --F_TAX_FNL
+'N', --u_frm_pgt
+'06/04/2022', --d_vct_blt
+'N', --I_CLI_PEP_NAC
+'N', --I_CLI_PEP_EST
+NULL , --C_TIP_PEP
+NULL , --N_USU_ALT_PRM
+8686 --u_ctc_clo
+---1 --u_vrs_seg*/
+);
