@@ -1,0 +1,2208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="09186b09-0d8d-4724-b94d-eb3bf1853de8" activeEnvironment="Default" name="CreditScore" resourceRoot="" soapui-version="5.7.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="742fccc2-3af4-4f51-a4fb-58c9980e7978" wsaVersion="NONE" name="BasicHttpBinding_ICreditScoreTaskService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_ICreditScoreTaskService" soapVersion="1_1" anonymous="optional" definition="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?wsdl"><con:part><con:url>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="CreditScoreTaskService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd3" namespace="http://www.libertyseguros.com.br/types/"/>
+      <xsd:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd2" namespace="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      <xsd:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd4" namespace="http://www.libertyseguros.com.br/services/creditscore/obterdadoscreditscore/types/"/>
+      <xsd:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Liberty.CreditScoreService.Service.Implementation.Task"/>
+      <xsd:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiro_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterScoreFinanceiro"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterScoreFinanceiroResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiro_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q1:ExceptionMessage" xmlns:q1="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiroPorData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterScoreFinanceiroPorData"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiroPorData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterScoreFinanceiroPorDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiroPorData_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q2:ExceptionMessage" xmlns:q2="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaScoreFinanceiro_InputMessage">
+    <wsdl:part name="parameters" element="tns:SolicitarConsultaScoreFinanceiro"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaScoreFinanceiro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SolicitarConsultaScoreFinanceiroResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaScoreFinanceiro_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q3:ExceptionMessage" xmlns:q3="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiroJuridico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterScoreFinanceiroJuridico"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiroJuridico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterScoreFinanceiroJuridicoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiroJuridico_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q4:ExceptionMessage" xmlns:q4="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiroJuridicoPorData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterScoreFinanceiroJuridicoPorData"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiroJuridicoPorData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterScoreFinanceiroJuridicoPorDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScoreFinanceiroJuridicoPorData_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q5:ExceptionMessage" xmlns:q5="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaScoreFinanceiroJuridico_InputMessage">
+    <wsdl:part name="parameters" element="tns:SolicitarConsultaScoreFinanceiroJuridico"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaScoreFinanceiroJuridico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SolicitarConsultaScoreFinanceiroJuridicoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaScoreFinanceiroJuridico_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q6:ExceptionMessage" xmlns:q6="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterDadosCreditScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterDadosCreditScore"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterDadosCreditScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterDadosCreditScoreResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterDadosCreditScore_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q7:ExceptionMessage" xmlns:q7="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisica_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterRestricaoFinanceiraPessoaFisica"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterRestricaoFinanceiraPessoaFisicaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisica_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q8:ExceptionMessage" xmlns:q8="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisicaPorData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterRestricaoFinanceiraPessoaFisicaPorData"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisicaPorData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterRestricaoFinanceiraPessoaFisicaPorDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisicaPorData_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q9:ExceptionMessage" xmlns:q9="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaFisica_InputMessage">
+    <wsdl:part name="parameters" element="tns:SolicitarConsultaRestricaoFinanceiraPessoaFisica"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaFisica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SolicitarConsultaRestricaoFinanceiraPessoaFisicaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaFisica_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q10:ExceptionMessage" xmlns:q10="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridica_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterRestricaoFinanceiraPessoaJuridica"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterRestricaoFinanceiraPessoaJuridicaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridica_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q11:ExceptionMessage" xmlns:q11="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridicaPorData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterRestricaoFinanceiraPessoaJuridicaPorData"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridicaPorData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterRestricaoFinanceiraPessoaJuridicaPorDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridicaPorData_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q12:ExceptionMessage" xmlns:q12="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaJuridica_InputMessage">
+    <wsdl:part name="parameters" element="tns:SolicitarConsultaRestricaoFinanceiraPessoaJuridica"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaJuridica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SolicitarConsultaRestricaoFinanceiraPessoaJuridicaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaJuridica_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q13:ExceptionMessage" xmlns:q13="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScore3D_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterScore3D"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScore3D_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterScore3DResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterScore3D_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q14:ExceptionMessage" xmlns:q14="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ConsultarScorePj5_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarScorePj5"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ConsultarScorePj5_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarScorePj5Response"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ConsultarScorePj5_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q15:ExceptionMessage" xmlns:q15="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterSituacaoCadastralPessoaJuridica_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterSituacaoCadastralPessoaJuridica"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterSituacaoCadastralPessoaJuridica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterSituacaoCadastralPessoaJuridicaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICreditScoreTaskService_ObterSituacaoCadastralPessoaJuridica_ExceptionMessageFault_FaultMessage">
+    <wsdl:part name="detail" element="q16:ExceptionMessage" xmlns:q16="http://www.libertyseguros.com.br/types/"/>
+  </wsdl:message>
+  <wsdl:portType name="ICreditScoreTaskService">
+    <wsdl:operation name="ObterScoreFinanceiro">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiro" message="tns:ICreditScoreTaskService_ObterScoreFinanceiro_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroResponse" message="tns:ICreditScoreTaskService_ObterScoreFinanceiro_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterScoreFinanceiro_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterScoreFinanceiroPorData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroPorData" message="tns:ICreditScoreTaskService_ObterScoreFinanceiroPorData_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroPorDataResponse" message="tns:ICreditScoreTaskService_ObterScoreFinanceiroPorData_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroPorDataExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterScoreFinanceiroPorData_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarConsultaScoreFinanceiro">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiro" message="tns:ICreditScoreTaskService_SolicitarConsultaScoreFinanceiro_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiroResponse" message="tns:ICreditScoreTaskService_SolicitarConsultaScoreFinanceiro_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiroExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_SolicitarConsultaScoreFinanceiro_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterScoreFinanceiroJuridico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridico" message="tns:ICreditScoreTaskService_ObterScoreFinanceiroJuridico_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridicoResponse" message="tns:ICreditScoreTaskService_ObterScoreFinanceiroJuridico_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridicoExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterScoreFinanceiroJuridico_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterScoreFinanceiroJuridicoPorData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridicoPorData" message="tns:ICreditScoreTaskService_ObterScoreFinanceiroJuridicoPorData_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridicoPorDataResponse" message="tns:ICreditScoreTaskService_ObterScoreFinanceiroJuridicoPorData_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridicoPorDataExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterScoreFinanceiroJuridicoPorData_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarConsultaScoreFinanceiroJuridico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiroJuridico" message="tns:ICreditScoreTaskService_SolicitarConsultaScoreFinanceiroJuridico_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiroJuridicoResponse" message="tns:ICreditScoreTaskService_SolicitarConsultaScoreFinanceiroJuridico_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiroJuridicoExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_SolicitarConsultaScoreFinanceiroJuridico_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterDadosCreditScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterDadosCreditScore" message="tns:ICreditScoreTaskService_ObterDadosCreditScore_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterDadosCreditScoreResponse" message="tns:ICreditScoreTaskService_ObterDadosCreditScore_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterDadosCreditScoreExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterDadosCreditScore_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterRestricaoFinanceiraPessoaFisica">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisica" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisica_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisicaResponse" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisica_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisicaExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisica_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterRestricaoFinanceiraPessoaFisicaPorData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisicaPorData" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisicaPorData_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisicaPorDataResponse" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisicaPorData_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisicaPorDataExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaFisicaPorData_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarConsultaRestricaoFinanceiraPessoaFisica">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaFisica" message="tns:ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaFisica_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaFisicaResponse" message="tns:ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaFisica_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaFisicaExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaFisica_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterRestricaoFinanceiraPessoaJuridica">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridica" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridica_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridicaResponse" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridica_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridicaExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridica_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterRestricaoFinanceiraPessoaJuridicaPorData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridicaPorData" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridicaPorData_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridicaPorDataResponse" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridicaPorData_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridicaPorDataExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterRestricaoFinanceiraPessoaJuridicaPorData_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarConsultaRestricaoFinanceiraPessoaJuridica">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaJuridica" message="tns:ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaJuridica_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaJuridicaResponse" message="tns:ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaJuridica_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaJuridicaExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_SolicitarConsultaRestricaoFinanceiraPessoaJuridica_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterScore3D">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScore3D" message="tns:ICreditScoreTaskService_ObterScore3D_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScore3DResponse" message="tns:ICreditScoreTaskService_ObterScore3D_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterScore3DExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterScore3D_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarScorePj5">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ConsultarScorePj5" message="tns:ICreditScoreTaskService_ConsultarScorePj5_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ConsultarScorePj5Response" message="tns:ICreditScoreTaskService_ConsultarScorePj5_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ConsultarScorePj5ExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ConsultarScorePj5_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObterSituacaoCadastralPessoaJuridica">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterSituacaoCadastralPessoaJuridica" message="tns:ICreditScoreTaskService_ObterSituacaoCadastralPessoaJuridica_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterSituacaoCadastralPessoaJuridicaResponse" message="tns:ICreditScoreTaskService_ObterSituacaoCadastralPessoaJuridica_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICreditScoreTaskService/ObterSituacaoCadastralPessoaJuridicaExceptionMessageFault" name="ExceptionMessageFault" message="tns:ICreditScoreTaskService_ObterSituacaoCadastralPessoaJuridica_ExceptionMessageFault_FaultMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICreditScoreTaskService" type="tns:ICreditScoreTaskService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ObterScoreFinanceiro">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiro" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObterScoreFinanceiroPorData">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroPorData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarConsultaScoreFinanceiro">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiro" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObterScoreFinanceiroJuridico">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridico" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObterScoreFinanceiroJuridicoPorData">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridicoPorData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarConsultaScoreFinanceiroJuridico">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiroJuridico" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObterDadosCreditScore">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterDadosCreditScore" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObterRestricaoFinanceiraPessoaFisica">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisica" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObterRestricaoFinanceiraPessoaFisicaPorData">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisicaPorData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarConsultaRestricaoFinanceiraPessoaFisica">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaFisica" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObterRestricaoFinanceiraPessoaJuridica">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridica" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObterRestricaoFinanceiraPessoaJuridicaPorData">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridicaPorData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarConsultaRestricaoFinanceiraPessoaJuridica">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaJuridica" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObterScore3D">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterScore3D" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarScorePj5">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ConsultarScorePj5" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObterSituacaoCadastralPessoaJuridica">
+      <soap:operation soapAction="http://tempuri.org/ICreditScoreTaskService/ObterSituacaoCadastralPessoaJuridica" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ExceptionMessageFault">
+        <soap:fault name="ExceptionMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CreditScoreTaskService">
+    <wsdl:port name="BasicHttpBinding_ICreditScoreTaskService" binding="tns:BasicHttpBinding_ICreditScoreTaskService">
+      <soap:address location="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd2" namespace="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+  <xs:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd4" namespace="http://www.libertyseguros.com.br/services/creditscore/obterdadoscreditscore/types/"/>
+  <xs:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd3" namespace="http://www.libertyseguros.com.br/types/"/>
+  <xs:element name="ObterScoreFinanceiro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q1:Request" xmlns:q1="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterScoreFinanceiroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterScoreFinanceiroResult" nillable="true" type="q2:ScoreFinanceiroResponse" xmlns:q2="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterScoreFinanceiroPorData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q3:Request" xmlns:q3="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+        <xs:element minOccurs="0" name="DataEspecifica" type="xs:dateTime"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterScoreFinanceiroPorDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterScoreFinanceiroPorDataResult" nillable="true" type="q4:ScoreFinanceiroResponse" xmlns:q4="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitarConsultaScoreFinanceiro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q5:Request" xmlns:q5="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitarConsultaScoreFinanceiroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SolicitarConsultaScoreFinanceiroResult" nillable="true" type="q6:ScoreFinanceiroResponse" xmlns:q6="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterScoreFinanceiroJuridico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q7:Request" xmlns:q7="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterScoreFinanceiroJuridicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterScoreFinanceiroJuridicoResult" nillable="true" type="q8:ScoreFinanceiroResponse" xmlns:q8="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterScoreFinanceiroJuridicoPorData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q9:Request" xmlns:q9="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+        <xs:element minOccurs="0" name="DataEspecifica" type="xs:dateTime"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterScoreFinanceiroJuridicoPorDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterScoreFinanceiroJuridicoPorDataResult" nillable="true" type="q10:ScoreFinanceiroResponse" xmlns:q10="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitarConsultaScoreFinanceiroJuridico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q11:Request" xmlns:q11="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitarConsultaScoreFinanceiroJuridicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SolicitarConsultaScoreFinanceiroJuridicoResult" nillable="true" type="q12:ScoreFinanceiroResponse" xmlns:q12="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterDadosCreditScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q13:ObterDadosCreditScoreRequest" xmlns:q13="http://www.libertyseguros.com.br/services/creditscore/obterdadoscreditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterDadosCreditScoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterDadosCreditScoreResult" nillable="true" type="q14:ObterDadosCreditScoreResponse" xmlns:q14="http://www.libertyseguros.com.br/services/creditscore/obterdadoscreditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterRestricaoFinanceiraPessoaFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q15:Request" xmlns:q15="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterRestricaoFinanceiraPessoaFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterRestricaoFinanceiraPessoaFisicaResult" nillable="true" type="q16:RespostaRestricaoPessoaFisica" xmlns:q16="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterRestricaoFinanceiraPessoaFisicaPorData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q17:Request" xmlns:q17="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+        <xs:element minOccurs="0" name="DataEspecifica" type="xs:dateTime"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterRestricaoFinanceiraPessoaFisicaPorDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterRestricaoFinanceiraPessoaFisicaPorDataResult" nillable="true" type="q18:RespostaRestricaoPessoaFisica" xmlns:q18="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitarConsultaRestricaoFinanceiraPessoaFisica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q19:Request" xmlns:q19="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitarConsultaRestricaoFinanceiraPessoaFisicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SolicitarConsultaRestricaoFinanceiraPessoaFisicaResult" nillable="true" type="q20:RespostaRestricaoPessoaFisica" xmlns:q20="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterRestricaoFinanceiraPessoaJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q21:Request" xmlns:q21="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterRestricaoFinanceiraPessoaJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterRestricaoFinanceiraPessoaJuridicaResult" nillable="true" type="q22:RespostaRestricaoPessoaJuridica" xmlns:q22="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterRestricaoFinanceiraPessoaJuridicaPorData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q23:Request" xmlns:q23="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+        <xs:element minOccurs="0" name="DataEspecifica" type="xs:dateTime"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterRestricaoFinanceiraPessoaJuridicaPorDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterRestricaoFinanceiraPessoaJuridicaPorDataResult" nillable="true" type="q24:RespostaRestricaoPessoaJuridica" xmlns:q24="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitarConsultaRestricaoFinanceiraPessoaJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q25:Request" xmlns:q25="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitarConsultaRestricaoFinanceiraPessoaJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SolicitarConsultaRestricaoFinanceiraPessoaJuridicaResult" nillable="true" type="q26:RespostaRestricaoPessoaJuridica" xmlns:q26="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterScore3D">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q27:Score3DRequest" xmlns:q27="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterScore3DResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterScore3DResult" nillable="true" type="q28:Score3DResponse" xmlns:q28="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarScorePj5">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q29:ScorePj5Request" xmlns:q29="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarScorePj5Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarScorePj5Result" nillable="true" type="q30:ScorePj5Response" xmlns:q30="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterSituacaoCadastralPessoaJuridica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q31:ObterSituacaoCadastalPessoaJuridicaRequest" xmlns:q31="http://www.libertyseguros.com.br/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObterSituacaoCadastralPessoaJuridicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObterSituacaoCadastralPessoaJuridicaResult" nillable="true" type="q32:ObterSituacaoCadastalPessoaJuridicaResponse" xmlns:q32="http://www.libertyseguros.com.br/types/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.libertyseguros.com.br/services/creditscore/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.libertyseguros.com.br/services/creditscore/types/">
+  <xs:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd3" namespace="http://www.libertyseguros.com.br/types/"/>
+  <xs:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Liberty.CreditScoreService.Service.Implementation.Task"/>
+  <xs:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  <xs:complexType name="Request">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q1:BaseRequest" xmlns:q1="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CpfCnpj" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="SistemaConsumidor" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Uf" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Request" nillable="true" type="tns:Request"/>
+  <xs:complexType name="ScoreFinanceiroResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q2:BaseResponse" xmlns:q2="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListaRetornoInformacaoScore" nillable="true" type="q2:ArrayOfRetornoInformacaoScore"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoAcaoCivel" nillable="true" type="q2:ArrayOfRetornoInformacaoAcaoCivel"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoCadastrais" nillable="true" type="q2:ArrayOfRetornoInformacaoCadastrais"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoDevolucaoCheque" nillable="true" type="q2:ArrayOfRetornoInformacaoDevolucaoCheque"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoEndereco" nillable="true" type="q2:ArrayOfRetornoInformacaoEndereco"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoIdentificacaoEmpresa" nillable="true" type="q2:ArrayOfRetornoInformacaoIdentificacaoEmpresa"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoOcorrenciaDebito" nillable="true" type="q2:ArrayOfRetornoInformacaoOcorrenciaDebito"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoProtesto" nillable="true" type="q2:ArrayOfRetornoInformacaoProtesto"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoResumoQuantidadeValor" nillable="true" type="q2:ArrayOfRetornoInformacaoResumoQuantidadeValor"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoTelefone" nillable="true" type="q2:ArrayOfRetornoInformacaoTelefone"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ScoreFinanceiroResponse" nillable="true" type="tns:ScoreFinanceiroResponse"/>
+  <xs:complexType name="RespostaRestricaoPessoaFisica">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q3:EntityResponse" xmlns:q3="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataConsulta" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataResposta" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Error" type="xs:boolean"/>
+          <xs:element minOccurs="0" name="RestricaoPessoaFisica" nillable="true" type="tns:RestricaoPessoaFisica"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RespostaRestricaoPessoaFisica" nillable="true" type="tns:RespostaRestricaoPessoaFisica"/>
+  <xs:complexType name="RestricaoPessoaFisica">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Acoes" nillable="true" type="q4:Acoes" xmlns:q4="http://schemas.datacontract.org/2004/07/Liberty.CreditScoreService.Service.Implementation.Task"/>
+      <xs:element minOccurs="0" name="AlertasDocumentos" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="CChequeSFundo" nillable="true" type="tns:CCFundo"/>
+      <xs:element minOccurs="0" name="ChequesSustados" nillable="true" type="tns:ArrayOfChequesSustadosMotivo21"/>
+      <xs:element minOccurs="0" name="ConsultasAnteriores" nillable="true" type="tns:ConsultasAnteriores"/>
+      <xs:element minOccurs="0" name="Enderecos" nillable="true" type="tns:ArrayOfEndereco"/>
+      <xs:element minOccurs="0" name="FalenciasEmpresariais" nillable="true" type="q5:FalenciasEmpresariais" xmlns:q5="http://schemas.datacontract.org/2004/07/Liberty.CreditScoreService.Service.Implementation.Task"/>
+      <xs:element minOccurs="0" name="Identificacao" nillable="true" type="tns:IdentificacaoResumida"/>
+      <xs:element minOccurs="0" name="ProtestosPorEstado" nillable="true" type="tns:ProtestoPorEstado"/>
+      <xs:element minOccurs="0" name="RegistroDebito" nillable="true" type="tns:RegistroDebito"/>
+      <xs:element minOccurs="0" name="SituacaoReceita" nillable="true" type="tns:SituacaoReceita"/>
+      <xs:element minOccurs="0" name="Telefones" nillable="true" type="q6:ArrayOfstring" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestricaoPessoaFisica" nillable="true" type="tns:RestricaoPessoaFisica"/>
+  <xs:complexType name="CCFundo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cheques" nillable="true" type="tns:ArrayOfChequesSFundo"/>
+      <xs:element minOccurs="0" name="Quantidade" type="xs:int"/>
+      <xs:element minOccurs="0" name="Ultimo" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CCFundo" nillable="true" type="tns:CCFundo"/>
+  <xs:complexType name="ArrayOfChequesSFundo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChequesSFundo" nillable="true" type="tns:ChequesSFundo"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChequesSFundo" nillable="true" type="tns:ArrayOfChequesSFundo"/>
+  <xs:complexType name="ChequesSFundo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Agencia" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Banco" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Motivo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Quantidade" type="xs:int"/>
+      <xs:element minOccurs="0" name="Ultimo" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChequesSFundo" nillable="true" type="tns:ChequesSFundo"/>
+  <xs:complexType name="ArrayOfChequesSustadosMotivo21">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChequesSustadosMotivo21" nillable="true" type="tns:ChequesSustadosMotivo21"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChequesSustadosMotivo21" nillable="true" type="tns:ArrayOfChequesSustadosMotivo21"/>
+  <xs:complexType name="ChequesSustadosMotivo21">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Agencia" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Alinea" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Banco" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="ChequeFinal" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="ChequeInicial" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="ContaCorrente" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="DataDisponibilizacao" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Informante" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChequesSustadosMotivo21" nillable="true" type="tns:ChequesSustadosMotivo21"/>
+  <xs:complexType name="ConsultasAnteriores">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Consultantes" nillable="true" type="tns:ArrayOfConsultasAnterioresConsultante"/>
+      <xs:element minOccurs="0" name="ConsultasMeses" nillable="true" type="tns:ArrayOfConsultasAnterioresMes"/>
+      <xs:element minOccurs="0" name="Primeira" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Quantidade" type="xs:int"/>
+      <xs:element minOccurs="0" name="Totais" nillable="true" type="tns:ConsultasAnterioresTotais"/>
+      <xs:element minOccurs="0" name="Ultima" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsultasAnteriores" nillable="true" type="tns:ConsultasAnteriores"/>
+  <xs:complexType name="ArrayOfConsultasAnterioresConsultante">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsultasAnterioresConsultante" nillable="true" type="tns:ConsultasAnterioresConsultante"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsultasAnterioresConsultante" nillable="true" type="tns:ArrayOfConsultasAnterioresConsultante"/>
+  <xs:complexType name="ConsultasAnterioresConsultante">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="RazaoSocial" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsultasAnterioresConsultante" nillable="true" type="tns:ConsultasAnterioresConsultante"/>
+  <xs:complexType name="ArrayOfConsultasAnterioresMes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsultasAnterioresMes" nillable="true" type="tns:ConsultasAnterioresMes"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsultasAnterioresMes" nillable="true" type="tns:ArrayOfConsultasAnterioresMes"/>
+  <xs:complexType name="ConsultasAnterioresMes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MesAno" nillable="true" type="tns:MesAno"/>
+      <xs:element minOccurs="0" name="Quantidade" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsultasAnterioresMes" nillable="true" type="tns:ConsultasAnterioresMes"/>
+  <xs:complexType name="MesAno">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ano" type="xs:int"/>
+      <xs:element minOccurs="0" name="Mes" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MesAno" nillable="true" type="tns:MesAno"/>
+  <xs:complexType name="ConsultasAnterioresTotais">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cheque" type="xs:int"/>
+      <xs:element minOccurs="0" name="Credito" type="xs:int"/>
+      <xs:element minOccurs="0" name="Outros" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsultasAnterioresTotais" nillable="true" type="tns:ConsultasAnterioresTotais"/>
+  <xs:complexType name="ArrayOfEndereco">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Endereco" nillable="true" type="tns:Endereco"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEndereco" nillable="true" type="tns:ArrayOfEndereco"/>
+  <xs:complexType name="Endereco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bairro" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="CEP" type="xs:int"/>
+      <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Complemento" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Logradouro" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Melhor" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="Numero" type="xs:int"/>
+      <xs:element minOccurs="0" name="TipoLogradouro" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="UF" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Endereco" nillable="true" type="tns:Endereco"/>
+  <xs:complexType name="IdentificacaoResumida">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q7:Object" xmlns:q7="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Cpf" type="xs:long"/>
+          <xs:element minOccurs="0" name="DataNascimento" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NomeMae" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IdentificacaoResumida" nillable="true" type="tns:IdentificacaoResumida"/>
+  <xs:complexType name="ProtestoPorEstado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DataUltimo" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Maior" nillable="true" type="q8:DataValor" xmlns:q8="http://schemas.datacontract.org/2004/07/Liberty.CreditScoreService.Service.Implementation.Task"/>
+      <xs:element minOccurs="0" name="Ocorrencias" nillable="true" type="tns:ArrayOfProtestoPorEstadoOcorrencia"/>
+      <xs:element minOccurs="0" name="Primeiro" nillable="true" type="q9:DataValor" xmlns:q9="http://schemas.datacontract.org/2004/07/Liberty.CreditScoreService.Service.Implementation.Task"/>
+      <xs:element minOccurs="0" name="Quantidade" type="xs:int"/>
+      <xs:element minOccurs="0" name="ValorTotal" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProtestoPorEstado" nillable="true" type="tns:ProtestoPorEstado"/>
+  <xs:complexType name="ArrayOfProtestoPorEstadoOcorrencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProtestoPorEstadoOcorrencia" nillable="true" type="tns:ProtestoPorEstadoOcorrencia"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProtestoPorEstadoOcorrencia" nillable="true" type="tns:ArrayOfProtestoPorEstadoOcorrencia"/>
+  <xs:complexType name="ProtestoPorEstadoOcorrencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cartorio" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Uf" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProtestoPorEstadoOcorrencia" nillable="true" type="tns:ProtestoPorEstadoOcorrencia"/>
+  <xs:complexType name="RegistroDebito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Avalista" nillable="true" type="tns:QntddValor"/>
+      <xs:element minOccurs="0" name="Comprador" nillable="true" type="tns:QntddValor"/>
+      <xs:element minOccurs="0" name="Ocorrencias" nillable="true" type="tns:ArrayOfRegistroDebitoOcorrencia"/>
+      <xs:element minOccurs="0" name="Primeiro" nillable="true" type="tns:RegistroDebitoPrimeiro"/>
+      <xs:element minOccurs="0" name="Quantidade" type="xs:int"/>
+      <xs:element minOccurs="0" name="Ultimo" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="ValorTotal" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegistroDebito" nillable="true" type="tns:RegistroDebito"/>
+  <xs:complexType name="QntddValor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Quantidade" type="xs:int"/>
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QntddValor" nillable="true" type="tns:QntddValor"/>
+  <xs:complexType name="ArrayOfRegistroDebitoOcorrencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RegistroDebitoOcorrencia" nillable="true" type="tns:RegistroDebitoOcorrencia"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRegistroDebitoOcorrencia" nillable="true" type="tns:ArrayOfRegistroDebitoOcorrencia"/>
+  <xs:complexType name="RegistroDebitoOcorrencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Contrato" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="DataDisponibilizacao" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Informante" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Situacao" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="TipoOcorrencia" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Uf" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegistroDebitoOcorrencia" nillable="true" type="tns:RegistroDebitoOcorrencia"/>
+  <xs:complexType name="RegistroDebitoPrimeiro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Informante" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegistroDebitoPrimeiro" nillable="true" type="tns:RegistroDebitoPrimeiro"/>
+  <xs:complexType name="SituacaoReceita">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoControle" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="DataAtualizacao" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="RegiaoOrigemCpf" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Situacao" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SituacaoReceita" nillable="true" type="tns:SituacaoReceita"/>
+  <xs:complexType name="RespostaRestricaoPessoaJuridica">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q10:EntityResponse" xmlns:q10="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataConsulta" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataResposta" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Error" type="xs:boolean"/>
+          <xs:element minOccurs="0" name="RestricaoPessoaJuridica" nillable="true" type="q11:RestricaoPessoaJuridica" xmlns:q11="http://schemas.datacontract.org/2004/07/Liberty.CreditScoreService.Service.Implementation.Task"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RespostaRestricaoPessoaJuridica" nillable="true" type="tns:RespostaRestricaoPessoaJuridica"/>
+  <xs:complexType name="ConsultasAnterioresPJ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConsultasMes" nillable="true" type="q12:ArrayOfRetornoInformacaoResumoQuantidadeValor" xmlns:q12="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Resumo" nillable="true" type="q13:RetornoInformacaoResumoQuantidadeValor" xmlns:q13="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="UltimasConsultas" nillable="true" type="q14:ArrayOfRetornoInformacaoConsultaAnterior" xmlns:q14="http://www.libertyseguros.com.br/types/"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsultasAnterioresPJ" nillable="true" type="tns:ConsultasAnterioresPJ"/>
+  <xs:complexType name="RegistroDebitoPJ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Maior" nillable="true" type="q15:RetornoInformacaoResumoDataValor" xmlns:q15="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Menor" nillable="true" type="q16:RetornoInformacaoResumoDataValor" xmlns:q16="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="RegistrosDebito" nillable="true" type="q17:ArrayOfRetornoInformacaoOcorrenciaDebito" xmlns:q17="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Resumo" nillable="true" type="q18:RetornoInformacaoResumoQuantidadeValor" xmlns:q18="http://www.libertyseguros.com.br/types/"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegistroDebitoPJ" nillable="true" type="tns:RegistroDebitoPJ"/>
+  <xs:complexType name="Score3DRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q19:BaseRequest" xmlns:q19="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Cpf" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="QuantidadeDiasValidadeConsulta" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Score3DRequest" nillable="true" type="tns:Score3DRequest"/>
+  <xs:complexType name="Score3DResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q20:BaseResponse" xmlns:q20="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataConsulta" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Pontuacao" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Score3DResponse" nillable="true" type="tns:Score3DResponse"/>
+  <xs:complexType name="ScorePj5Request">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q21:BaseRequest" xmlns:q21="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Cnpj" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="QuantidadeDiasValidadeConsulta" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ScorePj5Request" nillable="true" type="tns:ScorePj5Request"/>
+  <xs:complexType name="ScorePj5Response">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q22:BaseResponse" xmlns:q22="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataConsulta" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Pontuacao" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ScorePj5Response" nillable="true" type="tns:ScorePj5Response"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.libertyseguros.com.br/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.libertyseguros.com.br/types/">
+  <xs:complexType name="BaseRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AtivarTrace" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseRequest" nillable="true" type="tns:BaseRequest"/>
+  <xs:complexType name="BaseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="RowsAffected" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseResponse" nillable="true" type="tns:BaseResponse"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoScore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoScore" nillable="true" type="tns:RetornoInformacaoScore"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoScore" nillable="true" type="tns:ArrayOfRetornoInformacaoScore"/>
+  <xs:complexType name="RetornoInformacaoScore">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoSequencial" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="DataConsulta" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DescricaoModeloScore" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="QuantidadePontuacaoLiberty" nillable="true" type="xs:decimal"/>
+          <xs:element minOccurs="0" name="ResultadoScore" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="TimestampAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoScore" nillable="true" type="tns:RetornoInformacaoScore"/>
+  <xs:complexType name="Object">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="Object" nillable="true" type="tns:Object"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoAcaoCivel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoAcaoCivel" nillable="true" type="tns:RetornoInformacaoAcaoCivel"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoAcaoCivel" nillable="true" type="tns:ArrayOfRetornoInformacaoAcaoCivel"/>
+  <xs:complexType name="RetornoInformacaoAcaoCivel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Autorizacao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoSequencial" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataDistribuicao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NumeroDocumentoCreditScore" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Processo" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="Requerido" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="TipoDocumentoCreditScore" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="Uf" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:decimal"/>
+          <xs:element minOccurs="0" name="Vara" nillable="true" type="xs:short"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoAcaoCivel" nillable="true" type="tns:RetornoInformacaoAcaoCivel"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoCadastrais">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoCadastrais" nillable="true" type="tns:RetornoInformacaoCadastrais"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoCadastrais" nillable="true" type="tns:ArrayOfRetornoInformacaoCadastrais"/>
+  <xs:complexType name="RetornoInformacaoCadastrais">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CidadeOrigem" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataAtualizacaoCPF" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataNascimento" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="EstaComSituacaoRegular" type="xs:boolean"/>
+          <xs:element minOccurs="0" name="EstadoCivil" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="EstadoOrigem" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="GrauInstrucao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Mensagem" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NomeConjuge" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NomeMae" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="PaisOrigem" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="QuantidadeDependente" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="RG" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="RGDataEmissao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="RGEstadoEmissor" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="RGOrgaoEmissor" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="SituacaoCPF" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="TituloEleitor" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoCadastrais" nillable="true" type="tns:RetornoInformacaoCadastrais"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoDevolucaoCheque">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoDevolucaoCheque" nillable="true" type="tns:RetornoInformacaoDevolucaoCheque"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoDevolucaoCheque" nillable="true" type="tns:ArrayOfRetornoInformacaoDevolucaoCheque"/>
+  <xs:complexType name="RetornoInformacaoDevolucaoCheque">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoMotivoDevolucao" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="DataConsulta" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataUltimaOcorrencia" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="NumeroAgencia" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="NumeroBanco" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="Quantidade" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="TimestampAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoDevolucaoCheque" nillable="true" type="tns:RetornoInformacaoDevolucaoCheque"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoEndereco">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoEndereco" nillable="true" type="tns:RetornoInformacaoEndereco"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoEndereco" nillable="true" type="tns:ArrayOfRetornoInformacaoEndereco"/>
+  <xs:complexType name="RetornoInformacaoEndereco">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Bairro" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CEP" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoSequencial" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="Complemento" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DDD" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="EnderecoInstalacao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="MelhorEndereco" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NumeroLogradouro" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Telefone" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="TipoLogradouro" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Uf" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoEndereco" nillable="true" type="tns:RetornoInformacaoEndereco"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoIdentificacaoEmpresa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoIdentificacaoEmpresa" nillable="true" type="tns:RetornoInformacaoIdentificacaoEmpresa"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoIdentificacaoEmpresa" nillable="true" type="tns:ArrayOfRetornoInformacaoIdentificacaoEmpresa"/>
+  <xs:complexType name="RetornoInformacaoIdentificacaoEmpresa">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCNPJ" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoIbge" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="CodigoNaturezaJuridica" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoRamoAtividade" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DataAlteracao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataFundo" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataRegistro" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="InscricaoEstadual" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="MoedaCapitalAtual" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="MoedaCapitalSocial" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NaturezaJuridica" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Nire" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NomeFantasia" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="OrgaoAtual" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="OrgaoInicio" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="QuantidadeFiliais" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="RamoAtividade" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="RazaoSocial" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="RazaoSocialAnterior" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Segmento" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="SituacaoInscricaoEstadual" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="TipoCondicaoEmpresaCreditScore" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="ValorCapitalAtual" nillable="true" type="xs:decimal"/>
+          <xs:element minOccurs="0" name="ValorCapitalSocial" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoIdentificacaoEmpresa" nillable="true" type="tns:RetornoInformacaoIdentificacaoEmpresa"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoOcorrenciaDebito">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoOcorrenciaDebito" nillable="true" type="tns:RetornoInformacaoOcorrenciaDebito"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoOcorrenciaDebito" nillable="true" type="tns:ArrayOfRetornoInformacaoOcorrenciaDebito"/>
+  <xs:complexType name="RetornoInformacaoOcorrenciaDebito">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoSequencial" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataInicioExibirConsulta" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataOcorrencia" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="IndicadorInformadoConsulente" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Informacao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NumeroContrato" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="TipoCondicao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="TipoOcorrencia" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="TipoResponsabilidade" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UF" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Valor" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoOcorrenciaDebito" nillable="true" type="tns:RetornoInformacaoOcorrenciaDebito"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoProtesto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoProtesto" nillable="true" type="tns:RetornoInformacaoProtesto"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoProtesto" nillable="true" type="tns:ArrayOfRetornoInformacaoProtesto"/>
+  <xs:complexType name="RetornoInformacaoProtesto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CidadeCartorio" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoArtificial" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoMoeda" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Data" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="LocalidadeCodigo" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="NumeroCartorio" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="NumeroCartorioPET" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Uf" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:decimal"/>
+          <xs:element minOccurs="0" name="Vencimento" nillable="true" type="xs:dateTime"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoProtesto" nillable="true" type="tns:RetornoInformacaoProtesto"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoResumoQuantidadeValor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoResumoQuantidadeValor" nillable="true" type="tns:RetornoInformacaoResumoQuantidadeValor"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoResumoQuantidadeValor" nillable="true" type="tns:ArrayOfRetornoInformacaoResumoQuantidadeValor"/>
+  <xs:complexType name="RetornoInformacaoResumoQuantidadeValor">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoReferenciaMonetaria" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoSequencial" type="xs:short"/>
+          <xs:element minOccurs="0" name="DataConsulta" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataFinal" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataInicio" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="QuantidadeTotal" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="TimestampAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="TipoDetalheResumoCreditScore" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="TipoResumoCreditScore" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="ValorAcumulado" nillable="true" type="xs:decimal"/>
+          <xs:element minOccurs="0" name="ValorMedia" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoResumoQuantidadeValor" nillable="true" type="tns:RetornoInformacaoResumoQuantidadeValor"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoTelefone">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoTelefone" nillable="true" type="tns:RetornoInformacaoTelefone"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoTelefone" nillable="true" type="tns:ArrayOfRetornoInformacaoTelefone"/>
+  <xs:complexType name="RetornoInformacaoTelefone">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoSequencial" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="DDD" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataUltimaInformacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Quantidade" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="Telefone" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="TelefoneCompleto" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="TipoClassificacao" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoTelefone" nillable="true" type="tns:RetornoInformacaoTelefone"/>
+  <xs:complexType name="ExceptionMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExceptionMessage" nillable="true" type="tns:ExceptionMessage"/>
+  <xs:complexType name="CreditScore">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AnoObito" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Bairro" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CEP" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Celular1" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Celular2" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Celular3" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Complemento" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DDD1" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DDD2" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DDD3" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DDD_Celular1" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DDD_Celular2" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DDD_Celular3" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataDeNascimento" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Dependentes" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="FlagObito" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="FlagSocios" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Logradouro" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NomeMae" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="ScrCrdAlinSeg" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="ScrCustLiberty" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="SituacaoCadastral" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Telefone1" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Telefone2" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Telefone3" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="_id" type="xs:long"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreditScore" nillable="true" type="tns:CreditScore"/>
+  <xs:complexType name="EntityResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseResponse">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityResponse" nillable="true" type="tns:EntityResponse"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoComplementar">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoComplementar" nillable="true" type="tns:RetornoInformacaoComplementar"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoComplementar" nillable="true" type="tns:ArrayOfRetornoInformacaoComplementar"/>
+  <xs:complexType name="RetornoInformacaoComplementar">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoSequencial" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="Complemento" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="TipoComplemento" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UfOrigem" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoComplementar" nillable="true" type="tns:RetornoInformacaoComplementar"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoChequeSustado">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoChequeSustado" nillable="true" type="tns:RetornoInformacaoChequeSustado"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoChequeSustado" nillable="true" type="tns:ArrayOfRetornoInformacaoChequeSustado"/>
+  <xs:complexType name="RetornoInformacaoChequeSustado">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoAlinea" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoMoeda" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoSequencial" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataInicioExibirConsulta" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataOcorrencia" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DescricaoInformacao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="MotivoDevolucao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NumeroAgencia" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="NumeroBanco" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="NumeroChequeFinal" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="NumeroChequeInicial" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="NumeroContaCorrente" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="Uf" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoChequeSustado" nillable="true" type="tns:RetornoInformacaoChequeSustado"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoConsultaAnterior">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoConsultaAnterior" nillable="true" type="tns:RetornoInformacaoConsultaAnterior"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoConsultaAnterior" nillable="true" type="tns:ArrayOfRetornoInformacaoConsultaAnterior"/>
+  <xs:complexType name="RetornoInformacaoConsultaAnterior">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCNPJ" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoMoeda" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataOcorrencia" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DescricaoInformacao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NumeroDocumento" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Sequencia" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="TipoDocumento" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="TipoOcorrenciaConsultaAnterior" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoConsultaAnterior" nillable="true" type="tns:RetornoInformacaoConsultaAnterior"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoFalenciaRecuperacaoJudicial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoFalenciaRecuperacaoJudicial" nillable="true" type="tns:RetornoInformacaoFalenciaRecuperacaoJudicial"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoFalenciaRecuperacaoJudicial" nillable="true" type="tns:ArrayOfRetornoInformacaoFalenciaRecuperacaoJudicial"/>
+  <xs:complexType name="RetornoInformacaoFalenciaRecuperacaoJudicial">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoCNPJ" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoCartorio" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataOcorrencia" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Sequencia" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="TipoFalenciaRecuperacaoJudicial" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UF" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoFalenciaRecuperacaoJudicial" nillable="true" type="tns:RetornoInformacaoFalenciaRecuperacaoJudicial"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoParticipacao">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoParticipacao" nillable="true" type="tns:RetornoInformacaoParticipacao"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoParticipacao" nillable="true" type="tns:ArrayOfRetornoInformacaoParticipacao"/>
+  <xs:complexType name="RetornoInformacaoParticipacao">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCNPJ" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoCNPJEmpresaParticipada" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoMoeda" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="IndicadorAlertaCNPJEmpresaParticipada" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NireParticipacao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NomeRazaoSocialParticipacao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="PercentualParticipacao" nillable="true" type="xs:decimal"/>
+          <xs:element minOccurs="0" name="RestricoesEmpresasParticipadas" nillable="true" type="tns:ArrayOfRetornoInformacaoRestricaoEmpresaParticipada"/>
+          <xs:element minOccurs="0" name="Sequencia" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="ValorParticipacao" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoParticipacao" nillable="true" type="tns:RetornoInformacaoParticipacao"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoRestricaoEmpresaParticipada">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoRestricaoEmpresaParticipada" nillable="true" type="tns:RetornoInformacaoRestricaoEmpresaParticipada"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoRestricaoEmpresaParticipada" nillable="true" type="tns:ArrayOfRetornoInformacaoRestricaoEmpresaParticipada"/>
+  <xs:complexType name="RetornoInformacaoRestricaoEmpresaParticipada">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="NumeroDocumento" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Quantidade" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="Sequencia" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="SequenciaParticipacoesDaEmpresa" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="TipoDocumento" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="TipoRestricao" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoRestricaoEmpresaParticipada" nillable="true" type="tns:RetornoInformacaoRestricaoEmpresaParticipada"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoParticipanteEmpresa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoParticipanteEmpresa" nillable="true" type="tns:RetornoInformacaoParticipanteEmpresa"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoParticipanteEmpresa" nillable="true" type="tns:ArrayOfRetornoInformacaoParticipanteEmpresa"/>
+  <xs:complexType name="RetornoInformacaoParticipanteEmpresa">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCNPJ" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoMoeda" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataEntrada" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataFimMandato" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataInicioMandato" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="FuncaoDoParticipante" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="IndicadorObservacaoDocumentoParticipante" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="IndicadorResponsavelAssinaturaEmpresa" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NomeRazaoSocialParticipante" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NumeroDocumentoCreditScore" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="PercentualParticipacao" nillable="true" type="xs:decimal"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoOutraParticipacoesParticipante" nillable="true" type="tns:ArrayOfRetornoInformacaoOutraParticipacoesParticipante"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoRestricoesParticipante" nillable="true" type="tns:ArrayOfRetornoInformacaoRestritoParticipante"/>
+          <xs:element minOccurs="0" name="Sequencia" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="TipoDocumentoCreditScore" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="ValorParticipacao" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoParticipanteEmpresa" nillable="true" type="tns:RetornoInformacaoParticipanteEmpresa"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoOutraParticipacoesParticipante">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoOutraParticipacoesParticipante" nillable="true" type="tns:RetornoInformacaoOutraParticipacoesParticipante"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoOutraParticipacoesParticipante" nillable="true" type="tns:ArrayOfRetornoInformacaoOutraParticipacoesParticipante"/>
+  <xs:complexType name="RetornoInformacaoOutraParticipacoesParticipante">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCNPJParticipacao" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoMoeda" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="IndicadorAlertaCNPJEmpresaParticipada" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NireParticipacao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NomeRazaoSocialParticipacao" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="PercentualParticipacao" nillable="true" type="xs:decimal"/>
+          <xs:element minOccurs="0" name="RetornoInformacaoRestricaoOutraParticipacaoParticipante" nillable="true" type="tns:ArrayOfRetornoInformacaoRestricaoOutraParticipacaoParticipante"/>
+          <xs:element minOccurs="0" name="Sequencial" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="Sequencial_Participante" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="ValorParticipacao" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoOutraParticipacoesParticipante" nillable="true" type="tns:RetornoInformacaoOutraParticipacoesParticipante"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoRestricaoOutraParticipacaoParticipante">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoRestricaoOutraParticipacaoParticipante" nillable="true" type="tns:RetornoInformacaoRestricaoOutraParticipacaoParticipante"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoRestricaoOutraParticipacaoParticipante" nillable="true" type="tns:ArrayOfRetornoInformacaoRestricaoOutraParticipacaoParticipante"/>
+  <xs:complexType name="RetornoInformacaoRestricaoOutraParticipacaoParticipante">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="NumeroDocumento" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Quantidade" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="Sequencia" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="SequenciaOutraParticipacaoParticipante" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="TipoDocumento" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="TipoRestricao" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoRestricaoOutraParticipacaoParticipante" nillable="true" type="tns:RetornoInformacaoRestricaoOutraParticipacaoParticipante"/>
+  <xs:complexType name="ArrayOfRetornoInformacaoRestritoParticipante">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RetornoInformacaoRestritoParticipante" nillable="true" type="tns:RetornoInformacaoRestritoParticipante"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetornoInformacaoRestritoParticipante" nillable="true" type="tns:ArrayOfRetornoInformacaoRestritoParticipante"/>
+  <xs:complexType name="RetornoInformacaoRestritoParticipante">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="NumeroDocumento" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Quantidade" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="0" name="Sequencia" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="SequenciaParticipante" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="TipoDocumento" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="TipoRestricaoCreditScore" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoRestritoParticipante" nillable="true" type="tns:RetornoInformacaoRestritoParticipante"/>
+  <xs:complexType name="RetornoInformacaoResumoDataValor">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Object">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCpfCnpj" nillable="true" type="xs:long"/>
+          <xs:element minOccurs="0" name="CodigoMoeda" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoSequencial" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="Data" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DataConsultaSerasa" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="TipoData" nillable="true" type="xs:short"/>
+          <xs:element minOccurs="0" name="UsuarioMnt" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoInformacaoResumoDataValor" nillable="true" type="tns:RetornoInformacaoResumoDataValor"/>
+  <xs:complexType name="ObterSituacaoCadastalPessoaJuridicaRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoProdutoBase" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="CodigoProdutoComercial" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NumeroCNPJ" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="TipoSistemaCalculo" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObterSituacaoCadastalPessoaJuridicaRequest" nillable="true" type="tns:ObterSituacaoCadastalPessoaJuridicaRequest"/>
+  <xs:complexType name="ObterSituacaoCadastalPessoaJuridicaResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IdConsultaSituacaoCadastral" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="IndicadorAceitacao" type="xs:boolean"/>
+          <xs:element minOccurs="0" name="NomeRazaoSocial" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NumeroCNPJ" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObterSituacaoCadastalPessoaJuridicaResponse" nillable="true" type="tns:ObterSituacaoCadastalPessoaJuridicaResponse"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd5</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Liberty.CreditScoreService.Service.Implementation.Task" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/Liberty.CreditScoreService.Service.Implementation.Task">
+  <xs:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd3" namespace="http://www.libertyseguros.com.br/types/"/>
+  <xs:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd2" namespace="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+  <xs:complexType name="Acoes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Primeira" nillable="true" type="tns:DataValor"/>
+      <xs:element minOccurs="0" name="Total" nillable="true" type="tns:AcoesTotal"/>
+      <xs:element minOccurs="0" name="Ultima" nillable="true" type="tns:DataValor"/>
+      <xs:element minOccurs="0" name="Ultimas" nillable="true" type="tns:ArrayOfAcoesUltimasAcao"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Acoes" nillable="true" type="tns:Acoes"/>
+  <xs:complexType name="DataValor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataValor" nillable="true" type="tns:DataValor"/>
+  <xs:complexType name="AcoesTotal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Quantidade" type="xs:int"/>
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcoesTotal" nillable="true" type="tns:AcoesTotal"/>
+  <xs:complexType name="ArrayOfAcoesUltimasAcao">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcoesUltimasAcao" nillable="true" type="tns:AcoesUltimasAcao"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAcoesUltimasAcao" nillable="true" type="tns:ArrayOfAcoesUltimasAcao"/>
+  <xs:complexType name="AcoesUltimasAcao">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Quantidade" type="xs:int"/>
+      <xs:element minOccurs="0" name="TipoAcao" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcoesUltimasAcao" nillable="true" type="tns:AcoesUltimasAcao"/>
+  <xs:complexType name="FalenciasEmpresariais">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Quantidade" type="xs:int"/>
+      <xs:element minOccurs="0" name="Ultima" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FalenciasEmpresariais" nillable="true" type="tns:FalenciasEmpresariais"/>
+  <xs:complexType name="RestricaoPessoaJuridica">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Acoes" nillable="true" type="tns:AcoesPJ"/>
+      <xs:element minOccurs="0" name="AnaliseSetorial" nillable="true" type="q1:ArrayOfRetornoInformacaoComplementar" xmlns:q1="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="ChequeSustado" nillable="true" type="q2:ArrayOfRetornoInformacaoChequeSustado" xmlns:q2="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="ConsultasAnteriores" nillable="true" type="q3:ConsultasAnterioresPJ" xmlns:q3="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      <xs:element minOccurs="0" name="DevolucaoCheque" nillable="true" type="q4:ArrayOfRetornoInformacaoDevolucaoCheque" xmlns:q4="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="q5:RetornoInformacaoEndereco" xmlns:q5="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="FalenciaRecuperacaoJudicial" nillable="true" type="tns:FalenciaRecuperacaoJudicial"/>
+      <xs:element minOccurs="0" name="IdentificacaoEmpresa" nillable="true" type="q6:RetornoInformacaoIdentificacaoEmpresa" xmlns:q6="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="InformacaoComplementar" nillable="true" type="q7:ArrayOfRetornoInformacaoComplementar" xmlns:q7="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Participacoes" nillable="true" type="q8:ArrayOfRetornoInformacaoParticipacao" xmlns:q8="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Participantes" nillable="true" type="q9:ArrayOfRetornoInformacaoParticipanteEmpresa" xmlns:q9="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Protestos" nillable="true" type="tns:Protestos"/>
+      <xs:element minOccurs="0" name="RegistrosDebito" nillable="true" type="q10:RegistroDebitoPJ" xmlns:q10="http://www.libertyseguros.com.br/services/creditscore/types/"/>
+      <xs:element minOccurs="0" name="ResumoRestricoes" nillable="true" type="q11:ArrayOfRetornoInformacaoResumoQuantidadeValor" xmlns:q11="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Telefone" nillable="true" type="q12:ArrayOfRetornoInformacaoTelefone" xmlns:q12="http://www.libertyseguros.com.br/types/"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestricaoPessoaJuridica" nillable="true" type="tns:RestricaoPessoaJuridica"/>
+  <xs:complexType name="AcoesPJ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ocorrencias" nillable="true" type="q13:ArrayOfRetornoInformacaoAcaoCivel" xmlns:q13="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Resumo" nillable="true" type="q14:RetornoInformacaoResumoQuantidadeValor" xmlns:q14="http://www.libertyseguros.com.br/types/"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcoesPJ" nillable="true" type="tns:AcoesPJ"/>
+  <xs:complexType name="FalenciaRecuperacaoJudicial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RetInfoResumoFalenciaRecuperacaoJudicial" nillable="true" type="q15:ArrayOfRetornoInformacaoResumoQuantidadeValor" xmlns:q15="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="RetornoInformacaoFalenciaRecuperacaoJudicial" nillable="true" type="q16:ArrayOfRetornoInformacaoFalenciaRecuperacaoJudicial" xmlns:q16="http://www.libertyseguros.com.br/types/"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FalenciaRecuperacaoJudicial" nillable="true" type="tns:FalenciaRecuperacaoJudicial"/>
+  <xs:complexType name="Protestos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Maior" nillable="true" type="q17:RetornoInformacaoResumoDataValor" xmlns:q17="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Menor" nillable="true" type="q18:RetornoInformacaoResumoDataValor" xmlns:q18="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Ocorrencias" nillable="true" type="q19:ArrayOfRetornoInformacaoProtesto" xmlns:q19="http://www.libertyseguros.com.br/types/"/>
+      <xs:element minOccurs="0" name="Resumo" nillable="true" type="q20:RetornoInformacaoResumoQuantidadeValor" xmlns:q20="http://www.libertyseguros.com.br/types/"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Protestos" nillable="true" type="tns:Protestos"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd6</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <xs:complexType name="ArrayOfstring">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd4</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.libertyseguros.com.br/services/creditscore/obterdadoscreditscore/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.libertyseguros.com.br/services/creditscore/obterdadoscreditscore/types/">
+  <xs:import schemaLocation="http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd3" namespace="http://www.libertyseguros.com.br/types/"/>
+  <xs:complexType name="ObterDadosCreditScoreRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q1:BaseRequest" xmlns:q1="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Cpf" type="xs:long"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObterDadosCreditScoreRequest" nillable="true" type="tns:ObterDadosCreditScoreRequest"/>
+  <xs:complexType name="ObterDadosCreditScoreResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q2:BaseResponse" xmlns:q2="http://www.libertyseguros.com.br/types/">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreditScore" nillable="true" type="q2:CreditScore"/>
+          <xs:element minOccurs="0" name="DataConsulta" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="UsuarioManutencao" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObterDadosCreditScoreResponse" nillable="true" type="tns:ObterDadosCreditScoreResponse"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:endpoint>http://vdidevs039:8088/mockBasicHttpBinding_ICreditScoreTaskService</con:endpoint></con:endpoints><con:operation id="c0188625-ceee-4627-a253-fa1b6cbdad32" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ConsultarScorePj5" name="ConsultarScorePj5" bindingOperationName="ConsultarScorePj5" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="98de9556-7acc-4b0d-bd86-e43405cad8e3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ConsultarScorePj5>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:Cnpj>?</typ1:Cnpj>\r
+            <!--Optional:-->\r
+            <typ1:QuantidadeDiasValidadeConsulta>?</typ1:QuantidadeDiasValidadeConsulta>\r
+         </tem:request>\r
+      </tem:ConsultarScorePj5>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ConsultarScorePj5"/></con:call></con:operation><con:operation id="b04ec669-904b-49fb-b1c2-a5f499e43475" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterDadosCreditScore" name="ObterDadosCreditScore" bindingOperationName="ObterDadosCreditScore" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6585fe13-b2a4-49b5-a65c-e51f3b96477c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/obterdadoscreditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterDadosCreditScore>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:Cpf>?</typ1:Cpf>\r
+         </tem:request>\r
+      </tem:ObterDadosCreditScore>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterDadosCreditScore"/></con:call></con:operation><con:operation id="a27880a1-3201-4672-9542-717fc1721531" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisica" name="ObterRestricaoFinanceiraPessoaFisica" bindingOperationName="ObterRestricaoFinanceiraPessoaFisica" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d335474e-12d9-49f7-8d28-900281c50d05" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterRestricaoFinanceiraPessoaFisica>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+      </tem:ObterRestricaoFinanceiraPessoaFisica>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisica"/></con:call></con:operation><con:operation id="29e52d2d-6ab8-4074-ab62-3c7560a6bbb8" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisicaPorData" name="ObterRestricaoFinanceiraPessoaFisicaPorData" bindingOperationName="ObterRestricaoFinanceiraPessoaFisicaPorData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="60d04ce7-8aa7-4b09-9479-ab6f91217640" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterRestricaoFinanceiraPessoaFisicaPorData>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+         <!--Optional:-->\r
+         <tem:DataEspecifica>?</tem:DataEspecifica>\r
+      </tem:ObterRestricaoFinanceiraPessoaFisicaPorData>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaFisicaPorData"/></con:call></con:operation><con:operation id="f4c4d758-bdad-4730-8520-d008fe3d9c22" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridica" name="ObterRestricaoFinanceiraPessoaJuridica" bindingOperationName="ObterRestricaoFinanceiraPessoaJuridica" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="aa3221b6-4b71-4325-885c-764f146411b3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterRestricaoFinanceiraPessoaJuridica>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+      </tem:ObterRestricaoFinanceiraPessoaJuridica>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridica"/></con:call></con:operation><con:operation id="d22105b0-8e25-4eeb-9c24-6457336405e4" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridicaPorData" name="ObterRestricaoFinanceiraPessoaJuridicaPorData" bindingOperationName="ObterRestricaoFinanceiraPessoaJuridicaPorData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="734d9f6a-331a-434e-b2e8-26269b669579" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterRestricaoFinanceiraPessoaJuridicaPorData>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+         <!--Optional:-->\r
+         <tem:DataEspecifica>?</tem:DataEspecifica>\r
+      </tem:ObterRestricaoFinanceiraPessoaJuridicaPorData>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterRestricaoFinanceiraPessoaJuridicaPorData"/></con:call></con:operation><con:operation id="852f67bf-f622-4cf0-928f-afd18e8baa89" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterScore3D" name="ObterScore3D" bindingOperationName="ObterScore3D" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ae978ec3-8e04-4825-a73e-3df071333b69" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterScore3D>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:Cpf>?</typ1:Cpf>\r
+            <!--Optional:-->\r
+            <typ1:QuantidadeDiasValidadeConsulta>?</typ1:QuantidadeDiasValidadeConsulta>\r
+         </tem:request>\r
+      </tem:ObterScore3D>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterScore3D"/></con:call></con:operation><con:operation id="3bdacf33-fd9a-4ccf-b741-a40d48f6ff52" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiro" name="ObterScoreFinanceiro" bindingOperationName="ObterScoreFinanceiro" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f578d3d1-8eb3-4086-90af-da6743537fcd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterScoreFinanceiro>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+      </tem:ObterScoreFinanceiro>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiro"/></con:call></con:operation><con:operation id="3e36bd06-9875-4167-b849-8c227e4bbb9e" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridico" name="ObterScoreFinanceiroJuridico" bindingOperationName="ObterScoreFinanceiroJuridico" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="228db826-2e28-4466-8b12-5428fabf1a8d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterScoreFinanceiroJuridico>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+      </tem:ObterScoreFinanceiroJuridico>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridico"/></con:call></con:operation><con:operation id="4ad7ec55-962b-4d29-a128-e5840785b1ca" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridicoPorData" name="ObterScoreFinanceiroJuridicoPorData" bindingOperationName="ObterScoreFinanceiroJuridicoPorData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="91e3e9d2-0301-4b42-9485-949dedc41ddd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterScoreFinanceiroJuridicoPorData>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+         <!--Optional:-->\r
+         <tem:DataEspecifica>?</tem:DataEspecifica>\r
+      </tem:ObterScoreFinanceiroJuridicoPorData>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroJuridicoPorData"/></con:call></con:operation><con:operation id="6582622d-dcff-44d8-a408-7e03f342cdac" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroPorData" name="ObterScoreFinanceiroPorData" bindingOperationName="ObterScoreFinanceiroPorData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="43523629-4791-4058-85cc-a196c0aacc8a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterScoreFinanceiroPorData>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+         <!--Optional:-->\r
+         <tem:DataEspecifica>?</tem:DataEspecifica>\r
+      </tem:ObterScoreFinanceiroPorData>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterScoreFinanceiroPorData"/></con:call></con:operation><con:operation id="4697d992-99c9-41dd-aa46-af86e3232710" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/ObterSituacaoCadastralPessoaJuridica" name="ObterSituacaoCadastralPessoaJuridica" bindingOperationName="ObterSituacaoCadastralPessoaJuridica" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5fff5114-1c54-46ee-9fd0-770b847072f6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ObterSituacaoCadastralPessoaJuridica>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ:CodigoProdutoBase>?</typ:CodigoProdutoBase>\r
+            <!--Optional:-->\r
+            <typ:CodigoProdutoComercial>?</typ:CodigoProdutoComercial>\r
+            <!--Optional:-->\r
+            <typ:NumeroCNPJ>?</typ:NumeroCNPJ>\r
+            <!--Optional:-->\r
+            <typ:TipoSistemaCalculo>?</typ:TipoSistemaCalculo>\r
+         </tem:request>\r
+      </tem:ObterSituacaoCadastralPessoaJuridica>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterSituacaoCadastralPessoaJuridica"/></con:call></con:operation><con:operation id="124e2290-3a2f-4716-8ae5-ea522416184d" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaFisica" name="SolicitarConsultaRestricaoFinanceiraPessoaFisica" bindingOperationName="SolicitarConsultaRestricaoFinanceiraPessoaFisica" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0bc10241-4c39-4b5d-8475-106abe096a0d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SolicitarConsultaRestricaoFinanceiraPessoaFisica>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+      </tem:SolicitarConsultaRestricaoFinanceiraPessoaFisica>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaFisica"/></con:call></con:operation><con:operation id="9141eee0-aefd-48f8-8047-deda7b1cb7a2" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaJuridica" name="SolicitarConsultaRestricaoFinanceiraPessoaJuridica" bindingOperationName="SolicitarConsultaRestricaoFinanceiraPessoaJuridica" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3bacf5be-5132-4738-8418-274b490d63a0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SolicitarConsultaRestricaoFinanceiraPessoaJuridica>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+      </tem:SolicitarConsultaRestricaoFinanceiraPessoaJuridica>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaRestricaoFinanceiraPessoaJuridica"/></con:call></con:operation><con:operation id="8024d0ea-7721-4e82-bf24-0fa7fdbe87ed" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiro" name="SolicitarConsultaScoreFinanceiro" bindingOperationName="SolicitarConsultaScoreFinanceiro" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="56fafded-2f60-4f75-b5cf-75b0fcdbbe61" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SolicitarConsultaScoreFinanceiro>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+      </tem:SolicitarConsultaScoreFinanceiro>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiro"/></con:call></con:operation><con:operation id="d79371f2-b0ae-4e6e-9fb2-c78f3823daf8" isOneWay="false" action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiroJuridico" name="SolicitarConsultaScoreFinanceiroJuridico" bindingOperationName="SolicitarConsultaScoreFinanceiroJuridico" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d19e4fd6-029f-4ef9-8e2f-c90ab93b850d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://aceite-webservices/CreditScoreService/Task/CreditScore.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/" xmlns:typ1="http://www.libertyseguros.com.br/services/creditscore/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SolicitarConsultaScoreFinanceiroJuridico>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <!--Optional:-->\r
+            <typ:AtivarTrace>?</typ:AtivarTrace>\r
+            <!--Optional:-->\r
+            <typ:Usuario>?</typ:Usuario>\r
+            <!--Optional:-->\r
+            <typ1:CpfCnpj>?</typ1:CpfCnpj>\r
+            <!--Optional:-->\r
+            <typ1:SistemaConsumidor>?</typ1:SistemaConsumidor>\r
+            <!--Optional:-->\r
+            <typ1:Uf>?</typ1:Uf>\r
+         </tem:request>\r
+      </tem:SolicitarConsultaScoreFinanceiroJuridico>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/SolicitarConsultaScoreFinanceiroJuridico"/></con:call></con:operation></con:interface><con:mockService id="a6dcfb1e-903a-44e9-ad8f-6ed03fa7852c" port="8088" path="/mockBasicHttpBinding_ICreditScoreTaskService" host="vdidevs039" name="BasicHttpBinding_ICreditScoreTaskService MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="ObterSituacaoCadastralPessoaJuridica" id="60cbdb14-9918-471d-810d-8f93081045e0" interface="BasicHttpBinding_ICreditScoreTaskService" operation="ObterSituacaoCadastralPessoaJuridica"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="ea651476-6072-498e-8e4a-72b29c648468" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:typ="http://www.libertyseguros.com.br/types/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ObterSituacaoCadastralPessoaJuridicaResponse>
+         <!--Optional:-->
+         <tem:ObterSituacaoCadastralPessoaJuridicaResult>
+            <!--Optional:-->
+            <typ:Message>?</typ:Message>
+            <!--Optional:-->
+            <typ:RowsAffected>?</typ:RowsAffected>
+            <!--Optional:-->
+            <typ:IdConsultaSituacaoCadastral>?</typ:IdConsultaSituacaoCadastral>
+            <!--Optional:-->
+            <typ:IndicadorAceitacao>?</typ:IndicadorAceitacao>
+            <!--Optional:-->
+            <typ:NomeRazaoSocial>?</typ:NomeRazaoSocial>
+            <!--Optional:-->
+            <typ:NumeroCNPJ>?</typ:NumeroCNPJ>
+         </tem:ObterSituacaoCadastralPessoaJuridicaResult>
+      </tem:ObterSituacaoCadastralPessoaJuridicaResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterSituacaoCadastralPessoaJuridica"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
