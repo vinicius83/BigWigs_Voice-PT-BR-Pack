@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockService id="31a7406c-3d76-4d2f-8a76-dd33fa1220a6" port="8080" path="/" host="vdidevs039" name="MockService 1" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="ObterSituacaoCadastralPessoaJuridica" id="4ce0873d-e732-4ca5-9f8f-66f9d796dc83" interface="BasicHttpBinding_ICreditScoreTaskService" operation="ObterSituacaoCadastralPessoaJuridica"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="61a8510a-641e-48fd-afb7-a8bebc057f46" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+   <s:Body>
+      <ObterSituacaoCadastralPessoaJuridicaResponse xmlns="http://tempuri.org/">
+         <ObterSituacaoCadastralPessoaJuridicaResult xmlns:a="http://www.libertyseguros.com.br/types/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:Message/>
+            <a:RowsAffected>1</a:RowsAffected>
+            <a:IdConsultaSituacaoCadastral>62d9854c501f2b5dbc3bbdd6</a:IdConsultaSituacaoCadastral>
+            <a:IndicadorAceitacao>false</a:IndicadorAceitacao>
+            <a:NomeRazaoSocial>DATA SEVEN</a:NomeRazaoSocial>
+            <a:NumeroCNPJ>7726452000102</a:NumeroCNPJ>
+         </ObterSituacaoCadastralPessoaJuridicaResult>
+      </ObterSituacaoCadastralPessoaJuridicaResponse>
+   </s:Body>
+</s:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICreditScoreTaskService/ObterSituacaoCadastralPessoaJuridica"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService>
